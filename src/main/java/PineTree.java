@@ -31,8 +31,5 @@ public class PineTree {
 
     public void getSquirrel() {
 
-
-
-        return squirrels;
     }
 }

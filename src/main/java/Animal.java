@@ -34,6 +34,4 @@ public class Animal {
     public int getAge() {
         return age;
     }
-
-    public boolean eat(Object food);
 }

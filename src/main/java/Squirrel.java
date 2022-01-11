@@ -1,6 +1,16 @@
 public class Squirrel extends Animal {
 
-    public Squirrel(int weight, boolean hungry, int age) {
+    private int numOfConesInNest;
+
+    public Squirrel(int weight, boolean hungry, int age, int numOfConesInNest) {
         super(weight, hungry, age);
+
+        numOfConesInNest(numOfConesInNest);
     }
+
+    private void numOfConesInNest(int numOfConesInNest) {
+
+        this.numOfConesInNest = numOfConesInNest;
+    }
+
 }

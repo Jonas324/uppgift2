@@ -6,16 +6,24 @@ public class App {
 
         Scanner scan = new Scanner(System.in);
 
-        int treeAge = (int) (Math.random()*99) + 1;
-        int numOfCones = (int) (Math.random()*99);
+        int treeAge = (int) (Math.random() * 99) + 1;
+        int numOfCones = (int) (Math.random() * 99);
 
         System.out.println("Hur många ekorrar? ");
         int amountSquirrels = scan.nextInt();
 
-        for (int i = 0; i < amountSquirrels ; i++){
+        int weight = 30;
+        boolean hungry = false;
+        int age = 0;
+        for (int i = 0; i < amountSquirrels; i++) {
 
-            Squirrel sqr = new Squirrel((int) (Math.random()*10));
+            int numOfConesInNest = 5;
+
+            Squirrel sqr = new Squirrel(weight, hungry, age, numOfConesInNest);
         }
+
+        int wingSpan = 40;
+        Owl owl = new Owl(weight, hungry, age, wingSpan);
 
         PineTree tree = new PineTree(treeAge, numOfCones);
         tree.getSquirrel();
