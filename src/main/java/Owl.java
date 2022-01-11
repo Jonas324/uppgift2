@@ -17,4 +17,9 @@ public class Owl extends Animal {
     public String eat(Object food) {
         return null;
     }
+
+    @Override
+    public String toString(){
+        return null;
+    }
 }

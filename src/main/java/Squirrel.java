@@ -17,4 +17,9 @@ public class Squirrel extends Animal {
     public String eat(Object food) {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "weight: " + getWeight() + " age: " + getAge() + " cones: " + numOfConesInNest;
+    }
 }

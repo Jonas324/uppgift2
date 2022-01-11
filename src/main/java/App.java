@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        ArrayList<Squirrel> squirrels = new ArrayList<>();;
+        ArrayList<Squirrel> squirrels = new ArrayList<>();
 
         int treeAge = (int) (Math.random() * 99) + 1;
         int numOfCones = (int) (Math.random() * 99);
@@ -25,11 +25,12 @@ public class App {
             Squirrel sqr = new Squirrel(weight, hungry, age, numOfConesInNest);
             squirrels.add(sqr);
         }
+        PineTree tree = new PineTree(treeAge, numOfCones, squirrels);
+        tree.getSquirrel();
 
         int wingSpan = 40;
         Owl owl = new Owl(weight, hungry, age, wingSpan);
 
-        PineTree tree = new PineTree(treeAge, numOfCones, squirrels);
-        tree.getSquirrel();
+        System.out.println(squirrels);
     }
 }
