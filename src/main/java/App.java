@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class App {
@@ -8,6 +9,8 @@ public class App {
         Scanner scan = new Scanner(System.in);
         ArrayList<Squirrel> squirrels = new ArrayList<>();
 
+        Random snow = new Random();
+        int wind = (int) (Math.random() * 40);
         int treeAge = (int) (Math.random() * 99) + 1;
         int numOfCones = (int) (Math.random() * 99);
 
@@ -33,5 +36,7 @@ public class App {
         System.out.println(squirrels);
 
         System.out.println(owl);
+
+        System.out.println(tree.fall(snow.nextBoolean(), treeAge,wind));
     }
 }

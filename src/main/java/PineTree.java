@@ -29,4 +29,24 @@ public class PineTree {
         this.treeAge = treeAge;
     }
 
+
+
+    public String fall(boolean snow, int age, int wind) {
+
+        int fall = 0;
+
+        if (snow = true) {
+            fall = 40 + age + wind;
+        }else {
+            fall = age + wind;
+        }
+
+        if (fall >= 50){
+            return "Trädet har fallit";
+        }
+        else {
+            return "Trädet står kvar";
+        }
+    }
+
 }
