@@ -35,12 +35,5 @@ public abstract class Animal {
         return age;
     }
 
-    public String eat(boolean hungry){
-        if(hungry){
-            return "Har ätit";
-        }
-
-        return "Har inte ätit";
-    }
     public abstract String eat(Object food);
 }

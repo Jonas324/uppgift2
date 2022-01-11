@@ -1,11 +1,19 @@
 public class Owl extends Animal {
 
     private int wingSpan;
+    private int setAmountSquirrels;
 
-    public Owl(int weight, boolean hungry, int age, int wingSpan) {
+
+    public Owl(int weight, boolean hungry, int age, int wingSpan, int amountSquirrels) {
         super(weight, hungry, age);
         
         setWingSpan(wingSpan);
+        setAmountSquirrels(amountSquirrels);
+    }
+
+    private void setAmountSquirrels(int amountSquirrels) {
+
+        this.setAmountSquirrels = amountSquirrels;
     }
 
     private void setWingSpan(int wingSpan) {
@@ -15,11 +23,18 @@ public class Owl extends Animal {
 
     @Override
     public String eat(Object food) {
-        return null;
+        int i = (int) food;
+
+        if (i > 0) {
+            return "har ätit";
+        }
+        return "har inte ätit";
     }
 
     @Override
     public String toString(){
-        return null;
+
+        return "weight: " + getWeight() + " age: " + getAge() + " wing span: " + wingSpan + "hungrig: " + eat(setAmountSquirrels);
+
     }
 }

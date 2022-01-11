@@ -5,8 +5,9 @@ public class PineTree {
     private ArrayList<Squirrel> squirrels;
     private int numOfCones;
     private int treeAge;
+    private Owl owl;
 
-    public PineTree(int treeAge, int numOfCones, ArrayList<Squirrel> squirrels) {
+    public PineTree(int treeAge, int numOfCones, ArrayList<Squirrel> squirrels, Owl owl) {
 
         treeAge(treeAge);
         numOfCones(numOfCones);
@@ -28,7 +29,4 @@ public class PineTree {
         this.treeAge = treeAge;
     }
 
-    public void getSquirrel() {
-
-    }
 }

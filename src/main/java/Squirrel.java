@@ -15,11 +15,16 @@ public class Squirrel extends Animal {
 
     @Override
     public String eat(Object food) {
-        return null;
+        int i = (int) food;
+
+        if (i > 0) {
+            return "har ätit";
+        }
+        return "har inte ätit";
     }
 
     @Override
     public String toString() {
-        return "weight: " + getWeight() + " age: " + getAge() + " cones: " + numOfConesInNest;
+        return "weight: " + getWeight() + " age: " + getAge() + " cones: " + numOfConesInNest + "hungrig: " + eat(numOfConesInNest);
     }
 }

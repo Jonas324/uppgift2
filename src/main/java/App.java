@@ -25,12 +25,13 @@ public class App {
             Squirrel sqr = new Squirrel(weight, hungry, age, numOfConesInNest);
             squirrels.add(sqr);
         }
-        PineTree tree = new PineTree(treeAge, numOfCones, squirrels);
-        tree.getSquirrel();
-
         int wingSpan = 40;
-        Owl owl = new Owl(weight, hungry, age, wingSpan);
+        Owl owl = new Owl(weight, hungry, age, wingSpan, amountSquirrels);
+
+        PineTree tree = new PineTree(treeAge, numOfCones, squirrels, owl);
 
         System.out.println(squirrels);
+
+        System.out.println(owl);
     }
 }
