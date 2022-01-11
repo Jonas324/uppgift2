@@ -34,7 +34,7 @@ public class Owl extends Animal {
     @Override
     public String toString(){
 
-        return "weight: " + getWeight() + " age: " + getAge() + " wing span: " + wingSpan + "hungrig: " + eat(setAmountSquirrels);
+        return "Owl" + "weight: " + getWeight() + " age: " + getAge() + " wing span: " + wingSpan + "hungrig: " + eat(setAmountSquirrels);
 
     }
 }

@@ -17,19 +17,12 @@ public class App {
         System.out.println("Hur många ekorrar? ");
         int amountSquirrels = scan.nextInt();
 
-        int weight = 30;
-        boolean hungry = false;
-        int age = 0;
-
         for (int i = 0; i < amountSquirrels; i++) {
 
-            int numOfConesInNest = 5;
-
-            Squirrel sqr = new Squirrel(weight, hungry, age, numOfConesInNest);
+            Squirrel sqr = new Squirrel(weight(), hungry(), age(), numOfConesInNest());
             squirrels.add(sqr);
         }
-        int wingSpan = 40;
-        Owl owl = new Owl(weight, hungry, age, wingSpan, amountSquirrels);
+        Owl owl = new Owl(weight(), hungry(), age(), wingSpan(), amountSquirrels);
 
         PineTree tree = new PineTree(treeAge, numOfCones, squirrels, owl);
 
@@ -38,5 +31,35 @@ public class App {
         System.out.println(owl);
 
         System.out.println(tree.fall(snow.nextBoolean(), treeAge,wind));
+    }
+
+    private static int wingSpan() {
+        int wingSpan = (int) (Math.random()*20) + 10;
+
+        return wingSpan;
+    }
+
+    private static int age() {
+        int age = (int) (Math.random()*30) + 1;
+
+        return age;
+    }
+
+    private static boolean hungry() {
+        Random rd = new Random();
+        boolean hungry = rd.nextBoolean();
+
+        return hungry;
+    }
+
+    private static int weight() {
+        int weight = (int) (Math.random()*40);
+        return weight;
+    }
+
+    private static int numOfConesInNest() {
+        int numOfConesInNest = (int) (Math.random()*10);
+
+        return numOfConesInNest;
     }
 }
