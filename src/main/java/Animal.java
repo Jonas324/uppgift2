@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
 
     private int weight;
     private boolean hungry;
@@ -34,4 +34,11 @@ public class Animal {
     public int getAge() {
         return age;
     }
+
+    public String eat(boolean hungry){
+        if(hungry)
+        return "Har ätit";
+        else return "Har inte ätit";
+    }
+
 }
