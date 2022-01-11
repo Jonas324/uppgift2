@@ -5,10 +5,10 @@ public abstract class Animal {
     private int age;
 
     public Animal(int weight, boolean hungry, int age) {
-        super();
-        this.weight = weight;
-        this.hungry = hungry;
-        this.age = age;
+
+        setWeight(weight);
+        setHungry(hungry);
+        setAge(age);
     }
 
     public int getWeight() {
@@ -36,9 +36,11 @@ public abstract class Animal {
     }
 
     public String eat(boolean hungry){
-        if(hungry)
-        return "Har ätit";
-        else return "Har inte ätit";
-    }
+        if(hungry){
+            return "Har ätit";
+        }
 
+        return "Har inte ätit";
+    }
+    public abstract String eat(Object food);
 }

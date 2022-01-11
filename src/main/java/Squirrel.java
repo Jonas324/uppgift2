@@ -13,4 +13,8 @@ public class Squirrel extends Animal {
         this.numOfConesInNest = numOfConesInNest;
     }
 
+    @Override
+    public String eat(Object food) {
+        return null;
+    }
 }

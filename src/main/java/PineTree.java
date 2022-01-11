@@ -1,20 +1,19 @@
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class PineTree {
 
-    private HashMap<Squirrel, String> squirrels;
+    private ArrayList<Squirrel> squirrels;
     private int numOfCones;
     private int treeAge;
 
-    public PineTree(int treeAge, int numOfCones) {
-        super();
+    public PineTree(int treeAge, int numOfCones, ArrayList<Squirrel> squirrels) {
 
         treeAge(treeAge);
         numOfCones(numOfCones);
-        squirrels(squirrels);
+        squirrels(this.squirrels);
     }
 
-    private void squirrels(HashMap<Squirrel, String> squirrels) {
+    private void squirrels(ArrayList<Squirrel> squirrels) {
 
         this.squirrels = squirrels;
     }

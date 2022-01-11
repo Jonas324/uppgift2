@@ -5,11 +5,16 @@ public class Owl extends Animal {
     public Owl(int weight, boolean hungry, int age, int wingSpan) {
         super(weight, hungry, age);
         
-        setwingSpan(wingSpan);
+        setWingSpan(wingSpan);
     }
 
-    private void setwingSpan(int wingSpan) {
+    private void setWingSpan(int wingSpan) {
         
         this.wingSpan = wingSpan;
+    }
+
+    @Override
+    public String eat(Object food) {
+        return null;
     }
 }

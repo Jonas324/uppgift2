@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -5,6 +6,7 @@ public class App {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        ArrayList<Squirrel> squirrels = new ArrayList<>();;
 
         int treeAge = (int) (Math.random() * 99) + 1;
         int numOfCones = (int) (Math.random() * 99);
@@ -15,17 +17,19 @@ public class App {
         int weight = 30;
         boolean hungry = false;
         int age = 0;
+
         for (int i = 0; i < amountSquirrels; i++) {
 
             int numOfConesInNest = 5;
 
             Squirrel sqr = new Squirrel(weight, hungry, age, numOfConesInNest);
+            squirrels.add(sqr);
         }
 
         int wingSpan = 40;
         Owl owl = new Owl(weight, hungry, age, wingSpan);
 
-        PineTree tree = new PineTree(treeAge, numOfCones);
+        PineTree tree = new PineTree(treeAge, numOfCones, squirrels);
         tree.getSquirrel();
     }
 }
