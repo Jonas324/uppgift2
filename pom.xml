@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
 
     <properties>
-
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <!--    Maven plugins    -->
@@ -27,12 +26,32 @@
         <maven.resources.plugin.version>3.0.1</maven.resources.plugin.version>
         <maven.revapi.plugin.version>0.12.1</maven.revapi.plugin.version>
         <maven.surefire.plugin.version>2.19.1</maven.surefire.plugin.version>
+
+        <junit.version>3.8.2</junit.version>
     </properties>
 
     <modules>
         <module>forrest-domain</module>
-        <module>forrest-service</module>
+        <module>forrest-service-impl</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>forrest-service</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>$(junit.version)</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <resources>

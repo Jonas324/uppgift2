@@ -1,3 +1,5 @@
+package forrest.domain;
+
 public class Owl extends Animal {
 
     private int wingSpan;

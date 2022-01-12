@@ -1,3 +1,5 @@
+package forrest.domain;
+
 public class Squirrel extends Animal {
 
     private int numOfConesInNest;

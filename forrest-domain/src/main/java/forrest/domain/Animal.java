@@ -1,3 +1,5 @@
+package forrest.domain;
+
 public abstract class Animal {
 
     private int weight;

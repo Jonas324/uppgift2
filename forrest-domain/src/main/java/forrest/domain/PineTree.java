@@ -1,3 +1,5 @@
+package forrest.domain;
+
 import java.util.ArrayList;
 
 public class PineTree {
