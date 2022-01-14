@@ -1,4 +1,4 @@
 
 	Fråga. 1
 
-Det indikerar att det är extend. Alltså Owl och Squirrel extends eller ärver Animal.
+Det indikerar att det är extend. Alltså forrest.domain.Owl och forrest.domain.Squirrel extends eller ärver forrest.domain.Animal.

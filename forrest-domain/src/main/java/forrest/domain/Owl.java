@@ -5,7 +5,6 @@ public class Owl extends Animal {
     private int wingSpan;
     private int setAmountSquirrels;
 
-
     public Owl(int weight, boolean hungry, int age, int wingSpan, int amountSquirrels) {
         super(weight, hungry, age);
         
@@ -19,8 +18,8 @@ public class Owl extends Animal {
     }
 
     private void setWingSpan(int wingSpan) {
-        
-        this.wingSpan = wingSpan;
+
+            this.wingSpan = wingSpan;
     }
 
     @Override
@@ -36,7 +35,13 @@ public class Owl extends Animal {
     @Override
     public String toString(){
 
-        return "Owl" + "weight: " + getWeight() + " age: " + getAge() + " wing span: " + wingSpan + "hungrig: " + eat(setAmountSquirrels);
-
+        return "forrest.domain.Owl" + "weight: "
+                + getWeight()
+                + " age: "
+                + getAge()
+                + " wing span: "
+                + wingSpan
+                + "hungrig: "
+                + eat(setAmountSquirrels);
     }
 }

@@ -10,8 +10,8 @@ public class App {
 
         Scanner scan = new Scanner(System.in);
         ArrayList<Squirrel> squirrels = new ArrayList<>();
-
         Random snow = new Random();
+
         int wind = (int) (Math.random() * 40);
         int treeAge = (int) (Math.random() * 99) + 1;
         int numOfCones = (int) (Math.random() * 99);
@@ -32,17 +32,17 @@ public class App {
 
         System.out.println(owl);
 
-        System.out.println(tree.fall(snow.nextBoolean(), treeAge,wind));
+        System.out.println(tree.fall(snow.nextBoolean(), treeAge, wind));
     }
 
     private static int wingSpan() {
-        int wingSpan = (int) (Math.random()*20) + 10;
+        int wingSpan = (int) (Math.random() * 20) + 10;
 
         return wingSpan;
     }
 
     private static int age() {
-        int age = (int) (Math.random()*30) + 1;
+        int age = (int) (Math.random() * 30) + 1;
 
         return age;
     }
@@ -55,12 +55,12 @@ public class App {
     }
 
     private static int weight() {
-        int weight = (int) (Math.random()*40);
+        int weight = (int) (Math.random() * 40);
         return weight;
     }
 
     private static int numOfConesInNest() {
-        int numOfConesInNest = (int) (Math.random()*10);
+        int numOfConesInNest = (int) (Math.random() * 10);
 
         return numOfConesInNest;
     }

@@ -6,9 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="forrest-service-impl" />
         <module name="forrest-domain" />
+        <module name="forrest-service (1)" />
+        <module name="forrest-service" />
+        <module name="forrest-service-impl" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="forrest-service-impl" target="1.8" />
+      <module name="hello" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

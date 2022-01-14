@@ -33,11 +33,11 @@
     <modules>
         <module>forrest-domain</module>
         <module>forrest-service-impl</module>
+        <module>forrest-service</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
-
             <dependency>
                 <groupId>org.example</groupId>
                 <artifactId>forrest-service</artifactId>
